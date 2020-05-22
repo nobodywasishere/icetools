@@ -1,5 +1,6 @@
 icestorm
 arachne-pnr
 yosys
-iverilog
-verilator
+ghdl
+ghdl-yosys-plugin
+nextpnr

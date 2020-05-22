@@ -2,6 +2,8 @@
 
 Open Source FPGA toolkit built around [IceStorm](http://www.clifford.at/icestorm/) and [Yosys](http://www.clifford.at/yosys/) by [Clifford Wolf](http://www.clifford.at/).
 
+Forked by nobodywasishere specifically for VHDL development on the Upduino v2.0.
+
 ## Run with Docker
 
 ```
@@ -16,24 +18,22 @@ docker run dimdm/icetools icepack -h
 
 ## Toolchain
 
-| Component                                            | Function      | License                                              |
-|------------------------------------------------------|---------------|------------------------------------------------------|
-| [Yosys](http://www.clifford.at/yosys/)               | Synthesis     | [ISC](https://opensource.org/licenses/ISC)           |
-| [Icarus Verilog](http://iverilog.icarus.com/)        | Simulation    | [GPL-2.0](https://opensource.org/licenses/GPL-2.0)   |
-| [Verilator](https://www.veripool.org/wiki/verilator) | Simulation    | [LGPL-3.0](https://opensource.org/licenses/LGPL-3.0) |
-| [Arachne-pnr](https://github.com/cseed/arachne-pnr)  | Place & Route | [MIT](https://opensource.org/licenses/MIT)           |
-| [IceStorm](http://www.clifford.at/icestorm/)         | Bitstream     | [ISC](https://opensource.org/licenses/ISC)           |
+| Component                                                      | Function      | License                                          |
+|----------------------------------------------------------------|---------------|--------------------------------------------------|
+| [Yosys](http://www.clifford.at/yosys/)                         | Synthesis     | [ISC](https://opensource.org/licenses/ISC)       |
+| [Arachne-pnr](https://github.com/cseed/arachne-pnr)            | Place & Route | [MIT](https://opensource.org/licenses/MIT)       |
+| [IceStorm](http://www.clifford.at/icestorm/)                   | Bitstream     | [ISC](https://opensource.org/licenses/ISC)       |
+| [NextPNR](https://github.com/YosysHQ/nextpnr)                  | Place & Route | [ISC](https://opensource.org/licenses/ISC)       |
+| [GHDL](https://github.com/ghdl/ghdl)                           | Simulator     | [GPLv2](https://opensource.org/licenses/GPL-2.0) |
+| [ghdl-yosys-plugin](https://github.com/ghdl/ghdl-yosys-plugin) | Synthesis     | [GPLv3](https://opensource.org/licenses/GPL-3.0) |
 
 ## Supported FPGAs
 
-iCE40 LP/HX 1K/~~4K~~/8K
+iCE40UP5K, possibly others as I have only access to this board
 
 ## Supported Devkits
 
-- [icoBoard](https://shop.trenz-electronic.de/en/TE0887-02M-icoBoard-Version-1.1-with-8-MBit-SRAM)
-- [iCEstick](http://www.latticesemi.com/icestick)
-- [iCE40-HX8K Breakout Board](http://www.latticesemi.com/Products/DevelopmentBoardsAndKits/iCE40HX8KBreakoutBoard.aspx)
-- [MyStorm Blackice](https://gitlab.com/Folknology/mystorm/tree/BlackIce)
+- [Upduino v2.0](http://www.gnarlygrey.com/)
 
 ## Issues
 
