@@ -8,11 +8,16 @@ UNAME_STR=`uname`
 
 echo "Installing dependencies..."
 if [[ "$UNAME_STR" == "Darwin" ]] && hash brew 2>/dev/null; then
-	brew update && brew install python3 libftdi0 libffi autoconf bison gawk gnu-sed graphviz xdot mercurial cmake
+	brew update && brew install autoconf bison boost-python3 cmake eigen flex \
+        gawk gnu-sed graphviz libffi libftdi0 mercurial python3 qt5 readline \
+        tcl-tk xdot
+    alias python=python3
 fi
 if [[ "$UNAME_STR" == "Linux" ]] && hash apt-get 2>/dev/null; then
-	sudo apt-get install -y pkg-config build-essential bison flex gawk tcl-dev libffi-dev git mercurial python python3 libftdi-dev
-    sudo apt-get install -y libreadline-dev clang graphviz xdot cmake
+    sudo apt install bison build-essential clang cmake flex gawk git gnat-8 \
+        graphviz libboost-all-dev libeigen3-dev libffi-dev libftdi-dev \
+        libreadline-dev mercurial pkg-config python python3 python3-dev \
+        qt5-default tcl-dev xdot
 fi
 
 echo "┌──────────┐"
