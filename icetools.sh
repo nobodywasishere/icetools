@@ -20,22 +20,10 @@ echo "│ icestorm │"
 echo "└──────────┘"
 $DIR/icestorm.sh
 
-echo "┌─────────────┐"
-echo "│ arachne-pnr │"
-echo "└─────────────┘"
-$DIR/arachne-pnr.sh
 
 echo "┌───────┐"
 echo "│ yosys │"
 echo "└───────┘"
 $DIR/yosys.sh
 
-echo "┌──────────┐"
-echo "│ iverilog │"
-echo "└──────────┘"
-$DIR/iverilog.sh
 
-echo "┌───────────┐"
-echo "│ verilator │"
-echo "└───────────┘"
-$DIR/verilator.sh
