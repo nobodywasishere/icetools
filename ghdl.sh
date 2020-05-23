@@ -10,7 +10,7 @@ UNAME_STR=`uname`
 #if [[ "$UNAME_STR" == "Darwin" ]]; then
 #    echo "Installing ghdl from brew..."
 #    brew cask install ghdl
-elif [[ "$UNAME_STR" == "Linux" ]] && hash pacman 2>/dev/null; then
+if [[ "$UNAME_STR" == "Linux" ]] && hash pacman 2>/dev/null; then
     echo "Installing ghdl from pacman..."
     sudo pacman -S ghdl
 else
