@@ -6,9 +6,10 @@ popd > /dev/null
 
 UNAME_STR=`uname`
 
-if [[ "$UNAME_STR" == "Darwin" ]]; then
-    echo "Installing ghdl from brew..."
-    brew install ghdl
+# brew ghdl not working as expected
+#if [[ "$UNAME_STR" == "Darwin" ]]; then
+#    echo "Installing ghdl from brew..."
+#    brew cask install ghdl
 elif [[ "$UNAME_STR" == "Linux" ]] && hash pacman 2>/dev/null; then
     echo "Installing ghdl from pacman..."
     sudo pacman -S ghdl
@@ -30,5 +31,9 @@ else
     make
 
     echo "Installing ghdl..."
-    sudo make install
+    if [[ "$UNAME_STR" == "Darwin" ]]; then
+        make install
+    else
+        sudo make install
+    fi
 fi
