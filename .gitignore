@@ -1,2 +1,5 @@
 icestorm
 yosys
+ghdl
+ghdl-yosys-plugin
+nextpnr

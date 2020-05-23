@@ -22,6 +22,9 @@ docker run dimdm/icetools icepack -h
 |----------------------------------------------------------------|---------------|--------------------------------------------------|
 | [Yosys](http://www.clifford.at/yosys/)                         | Synthesis     | [ISC](https://opensource.org/licenses/ISC)       |
 | [IceStorm](http://www.clifford.at/icestorm/)                   | Bitstream     | [ISC](https://opensource.org/licenses/ISC)       |
+| [NextPNR](https://github.com/YosysHQ/nextpnr)                  | Place & Route | [ISC](https://opensource.org/licenses/ISC)       |
+| [GHDL](https://github.com/ghdl/ghdl)                           | Simulator     | [GPLv2](https://opensource.org/licenses/GPL-2.0) |
+| [ghdl-yosys-plugin](https://github.com/ghdl/ghdl-yosys-plugin) | Synthesis     | [GPLv3](https://opensource.org/licenses/GPL-3.0) |
 
 ## Supported FPGAs
 
