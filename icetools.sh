@@ -14,8 +14,7 @@ if [[ "$UNAME_STR" == "Darwin" ]] && hash brew 2>/dev/null; then
     brew install bash bison boost boost-python3 cmake eigen flex gawk git \
         gnu-sed graphviz libffi libftdi0 llvm mercurial pkg-config python \
         python3 qt5 readline tcl-tk xdot
-
-    alias python=python3
+    echo 'export PATH="/usr/local/opt/qt/bin:$PATH"' >> ~/.bash_profile
 fi
 # Ubuntu
 if [[ "$UNAME_STR" == "Linux" ]] && hash apt 2>/dev/null; then
@@ -37,6 +36,11 @@ echo "┌──────────┐"
 echo "│ icestorm │"
 echo "└──────────┘"
 $DIR/icestorm.sh
+
+echo "┌─────────┐"
+echo "│ nextpnr │"
+echo "└─────────┘"
+$DIR/nextpnr.sh
 
 echo "┌─────────┐"
 echo "│ nextpnr │"
