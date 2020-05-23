@@ -25,6 +25,7 @@ if [[ "$UNAME_STR" == "Darwin" ]]; then
 fi
 
 make clean
+make config-gcc
 
 if [[ ! `uname -a` == *"raspberrypi"* ]]; then
 	echo "Building yosys-abc..."
