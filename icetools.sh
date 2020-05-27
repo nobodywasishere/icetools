@@ -42,11 +42,6 @@ echo "│ nextpnr │"
 echo "└─────────┘"
 $DIR/nextpnr.sh
 
-echo "┌─────────┐"
-echo "│ nextpnr │"
-echo "└─────────┘"
-$DIR/nextpnr.sh
-
 echo "┌───────┐"
 echo "│ yosys │"
 echo "└───────┘"
