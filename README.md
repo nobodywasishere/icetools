@@ -1,3 +1,5 @@
+# __Use [open-tool-forge/fpga-toolchain](https://github.com/open-tool-forge/fpga-toolchain) instead. This is no longer maintained__
+
 # IceTools
 
 Open Source FPGA toolkit built around [IceStorm](http://www.clifford.at/icestorm/) and [Yosys](http://www.clifford.at/yosys/) by [Clifford Wolf](http://www.clifford.at/).
